@@ -7,8 +7,8 @@ const app = express();
 app.use(express.json());
 app.use(cors()); // Allow frontend requests
 
-const SHOPIFY_STORE = "your-store-name.myshopify.com";
-const ADMIN_API_ACCESS_TOKEN = "your_admin_api_access_token";
+const SHOPIFY_STORE = "quickstart-4720c706.myshopify.com";
+const ADMIN_API_ACCESS_TOKEN = "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";
 
 app.post('/save-search', async (req, res) => {
     const { customerId, searchUrl } = req.body;
